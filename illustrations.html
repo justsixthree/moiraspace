@@ -52,20 +52,13 @@
     </section>
 
     <section class="portfolio section" id="portfolio">
-      <div class="section__head">
-        <h2>{{title}}</h2>
-      </div>
       <div class="section__body">
         <div class="container">
-          <div class="cards">
+          <div class="cards cards--half">
             <div class="card" v-for="card in cards" :key="card.id">
               <div class="cardHead">
                 <img :src="card.img" alt="Moiraspace Portfolio" />
               </div>
-              <!-- <div class="cardBody"> 
-            <div>{{card.title}}</div>
-            <div>{{card.info}}</div>
-          </div> -->
             </div>
           </div>
         </div>
@@ -73,12 +66,14 @@
     </section>
 
     
-
     <footer class="footer" id="footer"></footer>
+
     
     <script src="https://unpkg.com/vue@next"></script>
+    
     <script src="/js/components/header.js"></script>
-    <script src="/js/index.js"></script>
+    <script src="/js/illustrations.js"></script>
     <script src="/js/components/footer.js"></script>
+
   </body>
 </html>
