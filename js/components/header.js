@@ -7,29 +7,15 @@ let header = Vue.createApp({
       logoAlt: 'Moiraspace',
       navigation : {
         left: [
+          
           {
-            name : 'Logos',
-            url : '/about',
-          },
-          {
-            name : 'Graphic design',
-            url : '/art',
-          },
-          {
-            name : 'Game design',
-            url : '/art',
+            name : 'Art',
+            url : '/illustrations.html',
           }
         ],
         
         right : [
-          {
-            name : 'Fine art',
-            url : '/art',
-          },
-          {
-            name : 'Community work',
-            url : '/about',
-          },
+          
         ],
         
       } 

@@ -23,14 +23,9 @@ a {
   --header-color : #000;
   background-color: #fff;
   height: 110px;
-  padding-left: 44px;
-  padding-right: 44px;
+  padding-left: 0px;
+  padding-right: 0px;
   transition: height 0.3s linear 0s;
-  /* position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  right: 0; */
 }
 
 .header--sticky.header {
@@ -47,19 +42,34 @@ a {
 
 .logo {
   display: inline-block;
-  width: 180px;
-  height: 180px;
+  width: 90px;
+  height: 90px;
   background-color: #fff;
   border-radius: 50%;
-  padding: 16px;
+  padding: 10px;
   transition: width 0.3s linear 0s, height 0.3s linear 0s;
 }
 
-.header--sticky .logo {
-  padding: 4px;
-  width: 70px;
-  height: 70px;
+@media (max-width: 767px) {
+  .header__nav {
+    align-items: center;
+  }
 }
+@media (min-width: 768px) {
+  .header {
+    padding-left: 44px;
+    padding-right: 44px;
+  }
+
+  .logo {
+    width: 180px;
+    height: 180px;
+    padding: 16px;
+  }
+
+}
+
+/* HEader ends */
 
 .nav__bar {
   display: flex;
@@ -120,20 +130,33 @@ a {
 }
 
 .hero {
-  height: 660px;
-  padding-left: 64px;
-  padding-right: 64px;
+  height: 400px;
+  padding-left: 24px;
+  padding-right: 24px;
   display: flex;
   align-items: center;
-  padding-top: 110px;
   background-color: #000;
   justify-content: center;
 }
+
 .hero h1 {
   color: #fff;
   font-weight: 600;
-  font-size: 56px;
+  font-size: 42px;
+  text-align: center;
 }
+
+@media (min-width: 768px) {
+  .hero {
+    height: 480px;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .hero h1 {
+    font-size: 56px;
+  }
+}
+
 
 h2 {
   font-size: 48px;
@@ -142,8 +165,8 @@ h2 {
 
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 100px;
 }
 .section__head {
   text-align: center;
@@ -155,12 +178,20 @@ h2 {
 /* cards */
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
 }
 
-.cards--half {
-  grid-template-columns: repeat(2, 1fr);
+@media (min-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  
+  .cards--half {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .cardHead {
