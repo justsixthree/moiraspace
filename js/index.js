@@ -31,10 +31,6 @@ let portfolio = Vue.createApp({
           id : 3        
         },
         {
-          img : 'https://cdn.dribbble.com/users/11251912/screenshots/17871839/media/7a46fe2f363c60aa6642f92e4226ec62.png?compress=1&resize=1200x900&vertical=top',
-          id : 4
-        },
-        {
           img : 'https://cdn.dribbble.com/users/11251912/screenshots/17871359/media/a7c3fa9219a3078059c1e818d66c2c75.png?compress=1&resize=1200x900&vertical=top',
           id : 5
         },
@@ -65,6 +61,10 @@ let portfolio = Vue.createApp({
         {
           img : 'https://cdn.dribbble.com/users/11251912/screenshots/17871307/media/718072ae0762baf19fc1190bf78a2752.png?compress=1&resize=1200x900&vertical=top',
           id : 12
+        },
+        {
+          img : 'https://cdn.dribbble.com/users/2089965/screenshots/4715077/media/91a5efee79f86201e95df40446481178.png?compress=1&resize=700x525&vertical=top',
+          id : 13
         }
       ]
     }

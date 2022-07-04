@@ -3,49 +3,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Moiraspace</title>
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <div id="header">
-      <header class="header" :class="{'header--sticky': scrollPosition > 100}">
-        <div class="header__nav">
-          <nav class="nav nav--left">
-            <ul class="nav__bar">
-              <li
-                class="nav__item"
-                v-for="nav in navigation.left"
-                :key="nav.name"
-              >
-                <a class="nav__link" :href="nav.url">{{nav.name}}</a>
-              </li>
-            </ul>
-          </nav>
-          <a class="logo" href="/index.html">
-            <img :src="logo" :alt="logoAlt" />
-          </a>
-
-          <nav class="nav nav--right">
-            <ul class="nav__bar">
-              <li
-                class="nav__item"
-                v-for="nav in navigation.right"
-                :key="nav.name"
-              >
-                <a class="nav__link" :href="nav.url">{{nav.name}}</a>
-              </li>
-              <li class="nav__item">
-                <button class="nav__icon">
-                  <span></span><span></span><span></span><span></span
-                  ><span></span><span></span><span></span><span></span
-                  ><span></span>
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-    </div>
+    <div id="header"></div>
 
     <section class="hero" id="hero">
       <h1>{{title}}</h1>
