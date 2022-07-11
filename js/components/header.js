@@ -64,9 +64,7 @@ let header = Vue.createApp({
           </li>
           <li class="nav__item">
             <button class="nav__icon">
-              <span></span><span></span><span></span><span></span
-              ><span></span><span></span><span></span><span></span
-              ><span></span>
+              <span></span><span></span><span></span>
             </button>
           </li>
         </ul>

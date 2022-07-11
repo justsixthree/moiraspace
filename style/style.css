@@ -111,10 +111,10 @@ a {
 
 .nav__icon span {
   display: inline-block;
-  width: 5px;
-  height: 5px;
+  width: 100%;
+  height: 3px;
   background-color: var(--header-color);
-  border-radius: 50%;
+  border-radius: 2px;
   margin-left: 5px;
   margin-bottom: 5px;
 
