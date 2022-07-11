@@ -10,40 +10,63 @@
         background-color: #eeece0;
       }
       .bhagya {
-        display: grid;
+        /* display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 16px;
+        grid-gap: 16px; */
         padding-left: 20px;
         padding-right: 20px;
+        line-height: 0;
+   
+        -webkit-column-count: 2;
+        -webkit-column-gap:    20px;  
+        -moz-column-count:    2;
+        -moz-column-gap:       20px;  
+        column-count:         2;
+        column-gap:           20px;  
         
       }
       .bhagya__card {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-bottom: 20px;
       }
       
       .bhagya__cardImg {
         max-width: 100%;
+        width: 100%;
+        height: auto ;
       }
-      @media (max-width: 767px){
+
+      
+      @media (max-width: 640px) {
+        .bhagya {
+        -moz-column-count:    1;
+        -webkit-column-count: 1;
+        column-count:         1;
+        }
+      }
+
+      /* @media (max-width: 767px){
         .bhagya {
           grid-template-columns: repeat(1, 1fr);
           grid-gap: 12px;
         }
-      }
+      } */
     </style>
   </head>
   <body>
     <div id="header" v-cloak></div>
 
     
+    <section class="hero" id="hero">
+      <h1>Bhagya's</h1>
+    </section>
+
     <section class="bhagya-section section" id="art" v-cloak>
       <div class="section__body">
         <div class="bhagya">
           <div class="bhagya__card" v-for="(icon,index) in icons" :key="icons.id">
-            <img class="bhagya__cardImg" :src="`/img/bhagya/${icon}.jpg`" alt="Moiraspace Portfolio" />
+            <img class="bhagya__cardImg"   :src="`/img/bhagya/${icon}.jpg`" alt="Moiraspace Portfolio" />
           </div>
+          
         </div>
       </div>
     </section>
