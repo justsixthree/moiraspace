@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moiraspace</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <style>
+      .icons-section{
+        background-color: #eeece0;
+      }
+      .bhagya {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+      }
+      .icon__card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .icon__cardImg {
+        max-width: 100%;
+      }
+      @media (max-width: 767px){
+        .icons {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-gap: 12px;
+        }
+        .icon__card {
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header" v-cloak></div>
+
+    
+    <section class="bhagya-section section" id="art" v-cloak>
+      <div class="section__body">
+        <div class="bhagya">
+          <div class="bhagya__card" v-for="(icon,index) in icons" :key="icons.id">
+            <img class="bhagya__cardImg" :src="`/img/bhagya/${icon}.jpg`" alt="Moiraspace Portfolio" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <footer class="footer" v-cloak id="footer"></footer>
+    
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="/js/components/header.js"></script>
+    <script src="/js/bhagya.js"></script>
+    <script src="/js/components/footer.js"></script>
+  </body>
+</html>

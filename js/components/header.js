@@ -8,20 +8,7 @@ let header = Vue.createApp({
       navigation : {
         left: [
           
-          {
-            name : 'Art',
-            url : '/illustrations.html',
-          },
-          {
-            name : 'Icons',
-            url : '/icons.html',
-          }
         ],
-        
-        right : [
-          
-        ],
-        
       } 
     }
   },
@@ -46,6 +33,11 @@ let header = Vue.createApp({
   template : `
   <header class="header" :class="{'header--sticky': scrollPosition > 100}">
     <div class="header__nav">
+
+    <a class="logo" href="/index.html">
+        <img :src="logo" :alt="logoAlt" />
+      </a>
+      
       <nav class="nav nav--left">
         <ul class="nav__bar">
           <li
@@ -57,9 +49,9 @@ let header = Vue.createApp({
           </li>
         </ul>
       </nav>
-      <a class="logo" href="/index.html">
-        <img :src="logo" :alt="logoAlt" />
-      </a>
+
+      
+      
 
       <nav class="nav nav--right">
         <ul class="nav__bar">
