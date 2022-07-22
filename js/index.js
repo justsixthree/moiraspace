@@ -19,7 +19,7 @@ let portfolio = Vue.createApp({
       title : 'Portfolio',
       cards: [
         {
-          img : 'https://cdn.dribbble.com/users/11251912/screenshots/17871689/media/2ab3091ce3466fdc4c80fa83942ee856.png?compress=1&resize=400x300&vertical=top',
+          img : 'https://cdn.dribbble.com/users/11251912/screenshots/17871307/media/718072ae0762baf19fc1190bf78a2752.png?compress=1&resize=1200x900&vertical=top',
           id : 1
         },
         {
@@ -59,11 +59,11 @@ let portfolio = Vue.createApp({
           id : 11        
         },
         {
-          img : 'https://cdn.dribbble.com/users/11251912/screenshots/17871307/media/718072ae0762baf19fc1190bf78a2752.png?compress=1&resize=1200x900&vertical=top',
+          img : 'https://cdn.dribbble.com/users/2089965/screenshots/4715077/media/91a5efee79f86201e95df40446481178.png?compress=1&resize=700x525&vertical=top',
           id : 12
         },
         {
-          img : 'https://cdn.dribbble.com/users/2089965/screenshots/4715077/media/91a5efee79f86201e95df40446481178.png?compress=1&resize=700x525&vertical=top',
+          img : 'https://cdn.dribbble.com/users/11251912/screenshots/17871689/media/2ab3091ce3466fdc4c80fa83942ee856.png?compress=1&resize=400x300&vertical=top',
           id : 13
         }
       ]
